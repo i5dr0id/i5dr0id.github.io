@@ -7,7 +7,7 @@ export const profile = {
   email: 'israelugbodaga@gmail.com',
   github: 'https://github.com/i5dr0id',
   linkedin: 'https://linkedin.com/in/israelugbodaga',
-  resume: 'https://docs.google.com/document/d/e/2PACX-1vSQ0xXF7km3DdWDYzsMyS8Qupx9ZBbK41J_awPesE_MtakmmWahcKb25Xkkf0Ugmq8NwfiofXkAYgJ_/pub',
+  resume: 'https://docs.google.com/document/d/e/2PACX-1vTqMOFc_2dBUQ2EZ6LlTGgzBR7i6EnHZSlyQubo2lgU1y1N2tMGz24ffyqo7-2TzCQ9YeJFgiEwAsrJ/pub',
   site: 'https://i5dr0id.github.io',
   headline: 'I move production systems between frameworks and languages, with the users still on them.',
   intro:
