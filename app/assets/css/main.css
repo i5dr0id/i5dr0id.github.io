@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --font-sans: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --color-paper: #f5f7f4;
+  --color-ink: #172019;
+  --color-muted: #5f6963;
+  --color-rule: #d7ddd6;
+  --color-add: #1b7a4e;
+  --color-del: #b2382c;
+  --color-add-bg: #e3f2e9;
+  --color-del-bg: #f8e4e0;
+  --color-well: #eceeea;
+}
+
+/* Dark palette: same roles, green-tinted dark rather than tinted black. */
+[data-theme="dark"] {
+  --color-paper: #0e1411;
+  --color-ink: #e4eae5;
+  --color-muted: #8e9993;
+  --color-rule: #24302a;
+  --color-add: #4fcb8e;
+  --color-del: #ec7c6c;
+  --color-add-bg: #12261b;
+  --color-del-bg: #2c1714;
+  --color-well: #131b17;
+}
+
+html { color-scheme: light; scroll-behavior: smooth; }
+html[data-theme="dark"] { color-scheme: dark; }
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  font-optical-sizing: auto;
+}
+
+/* Prose measure and headings. Display sizes use the wide optical range of Bricolage. */
+.measure { max-width: 68ch; }
+h1, h2, h3 { text-wrap: balance; letter-spacing: -0.015em; }
+
+a { text-underline-offset: 0.18em; }
+:focus-visible { outline: 2px solid var(--color-add); outline-offset: 3px; border-radius: 2px; }
+
+/* Diff block */
+.diff { @apply font-mono text-[0.8125rem] leading-[1.6] overflow-x-auto; }
+.diff .line { @apply grid grid-cols-[1.25rem_1fr] px-3 whitespace-pre-wrap; }
+.diff .line.add { color: var(--color-add); background: var(--color-add-bg); }
+.diff .line.del { color: var(--color-del); background: var(--color-del-bg); }
+.diff .line.ctx { color: var(--color-muted); }
+.diff .hunk { @apply px-3 py-1 text-muted; }
+.diff .file { @apply px-3 text-muted; }
+
+/* One orchestrated reveal on the hero diff. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal .line, .reveal .hunk, .reveal .file {
+    opacity: 0;
+    animation: rise 420ms cubic-bezier(.2,.7,.2,1) forwards;
+    animation-delay: calc(var(--i, 0) * 55ms);
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+}
+
+/* Timeline rail */
+.rail { border-left: 1px solid var(--color-rule); }
+.rail > li { position: relative; }
+.rail > li::before {
+  content: ""; position: absolute; left: -0.3125rem; top: 0.6rem;
+  width: 0.5625rem; height: 0.5625rem; border-radius: 9999px;
+  background: var(--color-paper); border: 1.5px solid var(--color-muted);
+}
+.rail > li.now::before { background: var(--color-add); border-color: var(--color-add); }
