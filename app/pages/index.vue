@@ -56,7 +56,7 @@ const featured = work.filter((w) => w.featured)
     <!-- Experience -->
     <section id="experience" class="pt-16 scroll-mt-20">
       <h2 class="text-2xl font-semibold">Experience</h2>
-      <p class="mt-2 measure text-muted">Employed twice, contracted since 2021, remote since 2019. Two of these are still running.</p>
+      <p class="mt-2 measure text-muted">Employed twice, contracted since 2021, remote since 2019. One of these is still running.</p>
       <ol class="rail mt-8 ml-1 list-none p-0 space-y-7">
         <li v-for="r in experience" :key="r.company + r.start" class="pl-6" :class="{ now: r.period.endsWith('present') }">
           <div class="flex flex-wrap items-baseline gap-x-3">

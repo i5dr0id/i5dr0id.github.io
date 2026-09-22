@@ -30,9 +30,18 @@ export const experience: Role[] = [
     work: 'spendive',
   },
   {
+    company: 'Independent',
+    title: 'Freelance software engineer',
+    period: 'Jun 2024 to Jun 2025',
+    start: 2024,
+    where: 'Client web and product work, remote',
+    summary:
+      'Client work between contracts: ComicPad, an AI comic creation and reading app on Next.js, Prisma and Stripe, and a Figma-driven rebuild of the Blazesoft Studio site on Next.js 15. Vue Mastery continued throughout.',
+  },
+  {
     company: 'Papershift GmbH',
     title: 'Frontend engineer, freelance',
-    period: 'Dec 2021 to 2025',
+    period: 'Dec 2021 to May 2024',
     start: 2021,
     where: 'Workforce management, Karlsruhe, remote',
     summary:

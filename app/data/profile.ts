@@ -28,7 +28,7 @@ export const heroDiff = {
       ],
     },
     {
-      header: 'Papershift, 2021 to 2025',
+      header: 'Papershift, 2021 to 2024',
       lines: [
         ['-', 'untyped Vue 2.6 modules'],
         ['+', 'TypeScript at 78% coverage, 22% fewer crash reports'],

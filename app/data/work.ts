@@ -74,7 +74,7 @@ export const work: CaseStudy[] = [
     slug: 'papershift',
     title: 'Absence and shift planning for 10,000 people a day',
     client: 'Papershift GmbH',
-    year: '2021 to 2025',
+    year: '2021 to 2024',
     role: 'Frontend engineer, freelance',
     deck: 'A component library, a TypeScript migration and two product modules built end to end on a German workforce-management platform.',
     stack: ['Vue 2.6', 'TypeScript', 'Composition API', 'Vuex', 'Vue I18n', 'Buefy', 'Tailwind', 'Mobiscroll', 'Jest', 'Storybook', 'Chromatic', 'Sentry', 'Rails API'],
