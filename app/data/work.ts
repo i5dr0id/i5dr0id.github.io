@@ -203,7 +203,7 @@ export const work: CaseStudy[] = [
       {
         heading: 'Outcome',
         paragraphs: [
-          'Four applications deployed through Vercel with releases kept stable throughout the engagement, and improved search visibility for the public site.',
+          'Deployments set up for four applications with releases kept stable throughout the engagement, and improved search visibility for the public site.',
         ],
       },
     ],

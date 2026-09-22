@@ -26,7 +26,7 @@ export const experience: Role[] = [
     start: 2025,
     where: 'Spend and procurement SaaS, remote',
     summary:
-      'Modernised the customer app, vendor portal and admin dashboard onto TypeScript, Vue 3 and Nuxt 4. Improved SEO on the public site, ran deployments on Vercel, fixed things in Go when needed.',
+      'Modernised the customer app, vendor portal and admin dashboard onto TypeScript, Vue 3 and Nuxt 4. Improved SEO on the public site, set up deployments, fixed things in Go when needed.',
     work: 'spendive',
   },
   {
