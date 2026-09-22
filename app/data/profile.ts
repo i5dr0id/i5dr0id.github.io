@@ -2,7 +2,6 @@ export const profile = {
   name: 'Israel Ugbodaga',
   handle: 'i5dr0id',
   role: 'Software engineer',
-  location: 'Lagos, Nigeria',
   remote: 'Works remotely with teams in Germany, the US and Nigeria',
   email: 'israelugbodaga@gmail.com',
   github: 'https://github.com/i5dr0id',

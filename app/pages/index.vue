@@ -6,7 +6,7 @@ import { skills } from '~/data/skills'
 
 useSeoMeta({
   title: null,
-  description: `${profile.name} is a software engineer in Lagos with ten years of production work in Vue, React, Go and Node.js, for teams in Germany, the US and Nigeria.`,
+  description: `${profile.name} is a software engineer with ten years of production work in Vue, React, Go and Node.js, for teams in Germany, the US and Nigeria.`,
   ogTitle: `${profile.name} — Software engineer`,
   ogDescription: profile.headline,
   ogImage: `${profile.site}/israel.jpg`,
@@ -20,7 +20,7 @@ const featured = work.filter((w) => w.featured)
     <!-- Hero -->
     <section class="pt-14 sm:pt-20 pb-12 grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] lg:items-start">
       <div>
-        <p class="font-mono text-sm text-muted">{{ profile.name }}. {{ profile.role }}, {{ profile.location }}.</p>
+        <p class="font-mono text-sm text-muted">{{ profile.name }}. {{ profile.role }}.</p>
         <h1 class="mt-5 text-[2rem] sm:text-[2.6rem] font-semibold leading-[1.1]">
           {{ profile.headline }}
         </h1>

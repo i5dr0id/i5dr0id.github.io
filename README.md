@@ -1,6 +1,6 @@
 # i5dr0id.github.io
 
-Personal site of Israel Ugbodaga — software engineer, Lagos. Live at https://i5dr0id.github.io.
+Personal site of Israel Ugbodaga — software engineer. Live at https://i5dr0id.github.io.
 
 Built with Nuxt 4, Vue 3 and Tailwind CSS v4, statically generated and deployed to GitHub Pages
 by the workflow in `.github/workflows/deploy.yml`. Fonts are self-hosted at build time by `@nuxt/fonts`.
