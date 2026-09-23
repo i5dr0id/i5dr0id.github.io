@@ -257,6 +257,7 @@ export const work: CaseStudy[] = [
     role: 'Engineer, detection engine and dashboard',
     deck: 'A Go service that ingests logs from the edge to the host, runs MITRE ATT&CK-mapped detection rules and streams alerts to a triage dashboard.',
     stack: ['Go', 'GoFiber', 'pgx', 'PostgreSQL', 'goose', 'zerolog', 'Server-Sent Events', 'React 19', 'Vite', 'Tailwind v4', 'TanStack Query', 'Recharts'],
+    link: { label: 'github.com/i5dr0id/sentinel-api', href: 'https://github.com/i5dr0id/sentinel-api' },
     diff: {
       header: 'where the security signal lived',
       lines: [
