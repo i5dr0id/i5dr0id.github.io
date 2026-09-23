@@ -252,7 +252,7 @@ export const work: CaseStudy[] = [
   {
     slug: 'security-hub',
     title: 'A security hub that reads the whole request path',
-    client: 'Brails',
+    client: 'Independent, for financial services',
     year: '2026',
     role: 'Engineer, detection engine and dashboard',
     deck: 'A Go service that ingests logs from the edge to the host, runs MITRE ATT&CK-mapped detection rules and streams alerts to a triage dashboard.',
@@ -271,7 +271,7 @@ export const work: CaseStudy[] = [
       {
         heading: 'Context',
         paragraphs: [
-          'A payments platform sees a lot of hostile traffic, and the evidence for any one incident was spread across Cloudflare, the API gateway, the application servers and the hosts. The security hub was built to put that in one place, and deliberately kept outside the main monorepo so the ingestion and detection core could be reused by other products.',
+          'Financial services platforms see a lot of hostile traffic, and the evidence for any one incident is usually spread across the WAF, the API gateway, the application servers and the hosts. I built the security hub as an independent project to put that in one place, with the ingestion and detection core kept separate so it can sit in front of any product.',
         ],
       },
       {
